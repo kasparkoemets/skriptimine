@@ -21,3 +21,14 @@ git remote add skriptimine hhtps://github.com/kasparkoemets/reponimi.git
 
 f) git remote kontroll
 git remote -v
+
+põhikasutamine:
+
+g)pane fail järgmisele:
+git add failinimi
+
+h)lisa kirjelduse muudatuse kohta
+git commit -m "lühikirjelduse lause"
+
+i) lisa kaugrepositooriumi
+git push -uf skriptimine master
