@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# ülesanne2
+#
+echo -n "Tere, minu nimi on Kaspar Koemets. "
+echo -n "Õpin ISP118 õppegrupis. "
+echo -n "See aine tundub huvitav. "
+echo -n "Mul oli alguses natuke raskusi aga saan hakkama. "
+#
