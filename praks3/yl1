@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# Kuupäev
+#
+date
+echo -n Calendar of
+cal
