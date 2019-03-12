@@ -1,7 +1,6 @@
 #!/bin/bash
 #
 # päevade arv, mil masin on tööl olnud
-#
 echo -n $HOSTNAME "at"
 uptime | cut -f1 -d"," 
 #
