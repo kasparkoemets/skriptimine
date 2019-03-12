@@ -1,0 +1,5 @@
+#!/bin/bash
+#
+# var kataloogi failid
+find /var/ -name "*.log" 2>/dev/null -exec wc -l {} + | sort -nr
+#
