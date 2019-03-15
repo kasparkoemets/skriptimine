@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+# koka abi
+#
+echo "Sisesta aluskandiku pikkus:"
+read pikkus
+echo "sisesta aluskandiku laius:"
+read laius
+echo "Sisesta kupsiste pikkus:"
+read kp
+echo "Sisesta kupsiste laius:"
+read kl
+echo "Mitme kihilist torti soovite?"
+read kihid
+echo "Mitu küpsist on ühes pakis?"
+read kap
+tp=`expr $pikkus \* $laius`
+kpa=`expr $kp \* $kl`
+ka=`expr $tp \/ $kpa`
+kkihid=`expr $kihid \* $ka`
+kapa=`expr $kkihid \/ $kap`
+echo "Teil on vaja $kapa pakki küpsiseid või $kkihid küpsist"

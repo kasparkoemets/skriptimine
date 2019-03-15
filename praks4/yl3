@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+#ekskursioon
+#
+echo  -n "Tere, reisija! "
+echo "sisesta reisijate arv grupis: "
+read  reisijad
+echo "sisesta bussi kohtade arv:"
+read bussikohad
+x=`expr $bussikohad - $reisijad`
+echo "Vaba kohti on veel bussis: $x"
+echo "Kui arv on - miinuses siis nii palju inimesi jäi maha."

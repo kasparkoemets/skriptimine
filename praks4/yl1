@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+#tervitus
+#
+echo -n "Sisestage oma ees ja perekonnanimi:"
+read yourname
+echo "Tere tulemast, $yourname"
