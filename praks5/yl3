@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+# nädalapäevad
+echo "pühapäev 0;
+Esmaspäev 1;
+Teisipäev 2;
+Kolmapäev 3;
+Neljapäev 4;
+Reede 5;
+Laupäev 6.;
+echo -n "Sisestage numbriga, millisel päeval te puhkusele lähete:"
+read paev
+echo -n "Sisestage mitu ööpäeva te olete reisil:"
+read oopaev
+paevad=$(($oopaev % 7))
+tagasi=$(($paev + $paevad))
+echo "Te saabute tagasi $tagasi nädalapäeval"
