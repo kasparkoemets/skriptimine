@@ -1,13 +1,13 @@
 #!/bin/bash
 #
 # heroni valem
-echo -n "Sisesta a külje väärtus:"
-read a
+echo -n "Sisesta a külje väärtus:" #küljeväärtus
+read a #loeb vastust
 echo -n "Sisesta b külje väärtus:"
 read b
 echo -n "Sisesta c külje väärtus:"
 read c
 echo -n "Sisesta pool kolmnurga ümbermõõtu:"
 read p
-vastus=$(bc <<< "scale=3;sqrt($p * ($p - $a) * ($p - $b) * ($p - $c))")
+vastus=$(bc <<< "scale=3;sqrt($p * ($p - $a) * ($p - $b) * ($p - $c))") #vastus
 echo "Kolmnurga pindala väärtus (cm):$vastus"

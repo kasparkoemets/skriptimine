@@ -1,11 +1,11 @@
 #!/bin/bash
 #
 # kolmnurk
-echo -n "Sisestsge kolmnurga a külje väärtus(cm):"
-read a
+echo -n "Sisestsge kolmnurga a külje väärtus(cm):" #sisestab külje suuruse
+read a #loeb vastust
 echo -n "Sisestage kolmnurga b külje väärtus(cm):"
 read b
-vastus=$(bc <<< "scale=3;sqrt($a^2 + $b^2)")
+vastus=$(bc <<< "scale=3;sqrt($a^2 + $b^2)") #valem
 #sellega arvutame, scale näitab meile komakohti ja sqrt käsuga paneme 
 #väärtuse ruutjuurde ning ^2 korrutab arvu kahega.
 echo "Antud kolmnurga hüpotees (ehk c) on (cm): $vastus"
