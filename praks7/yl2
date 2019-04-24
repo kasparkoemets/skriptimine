@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+# kuu numbri jargi aastaaja valjastus
+echo -n "Sisesta kuu number:"
+read kuu
+if test $kuu -eq 1 -o $kuu -eq 2 -o $kuu -eq 12
+then
+echo "On talv"
+elif test $kuu -ge 3 -a $kuu -le 5
+then
+echo "On kevad"
+elif test $kuu -ge 6 -a $kuu -le 8
+then
+echo "On suvi"
+elif test $kuu -ge 9 -a $kuu -le 11
+then
+echo "On sügis"
+else
+echo "Kuud pole olemas"
+fi
