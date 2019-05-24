@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+echo -n "Sisesta ridade arv: ";read rida
+reanum=1
+for (( i = 1; i <= $rida; i++ ))
+do
+echo -n "$reanum"
+tarn=$(($read +1 - $i))
+let reanum++
+for (( j =1; j <= $tarn; j++ ))
+do
+echo -n "* "
+done
+echo ""
+done
